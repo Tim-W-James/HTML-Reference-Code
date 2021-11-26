@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <!-- basic form -->
+  <h1>Form 1</h1>
+  <form action="process.php" method="POST">
+    <div>
+      <label>First Name</label>
+      <input type="text" name="firstName" placeholder="Bob">
+    </div>
+    <div>
+      <label>Last Name</label>
+      <input type="text" name="lastName" placeholder="Jones">      
+    </div>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+  <!-- advanced form -->
+  <h1>Form 2</h1>
+  <form action="process.php" method="POST">
+    <div>
+      <label>Email</label>
+      <input type="email" name="email" placeholder="bob@something.com">      
+    </div>
+    <div>
+      <label>Message</label>
+      <textarea name="message" id="" cols="30" rows="2" placeholder="Hello!"></textarea>     
+    </div>
+    <div>
+      <label>Gender</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>  
+    </div>
+    <div>
+      <label>Age</label>
+      <input name="age" type="number" value="30">
+    </div>
+    <div>
+      <label>Birthday</label>
+      <input name="birthday" type="date">
+    </div>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+  <br>
+
+  <!-- button -->
+  <button>Click Me</button>
+</body>
+</html>
